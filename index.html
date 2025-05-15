@@ -1,18 +1,33 @@
----
-layout: default
----
+<head>
+    <Title>Storehouse Patents</Title>
+    <link rel="icon" type="image/x-icon" href="/images/square-outline-16.ico">
+    <meta name="description" content="Storehouse Patents">
+</head>
+
+<style>html, body
+{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+div {
+    position:relative;
+    height: 100%;
+    width:100%;
+}
+
+div img {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}</style>
 
 <div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+  <img src="/images/abbey_logo.png" alt="Abbey" width="512" height="512">
+  
 </div>
